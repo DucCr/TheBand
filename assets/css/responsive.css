@@ -1,0 +1,152 @@
+/* PC */
+@media only screen and (min-width: 1205px) {
+}
+
+/* TABLET */
+@media only screen and (max-width: 1204px) and (min-width: 741px) {
+  #list-member {
+    width: 100%;
+  }
+  #list-member img {
+    width: 177px;
+    height: 200px;
+    margin: 0 40px;
+    border-radius: 4px;
+  }
+}
+
+/*MOBILE*/
+@media only screen and (max-width: 740px) {
+  #header {
+    /* height: auto; */
+    display: block;
+    overflow: hidden;
+  }
+
+  #slider .text-content {
+    display: none;
+  }
+
+  #nav {
+    width: 100%;
+  }
+
+  #nav li:not(.nav-home) {
+    display: block;
+    border-bottom: 1px solid white;
+  }
+
+  #nav .nav-home {
+    display: inline-block;
+  }
+
+  #nav > li > a {
+    border-bottom: #ccc;
+    display: block;
+  }
+
+  .nav-more {
+    position: relative;
+  }
+
+  .search-btn i {
+    display: none;
+  }
+
+  .icon-bar {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .fa-sort-down:before {
+    position: absolute;
+    left: -264px;
+  }
+
+  #nav .subnav {
+    position: relative;
+    background-color: #ccc;
+    color: black;
+    padding: 0 16px;
+  }
+
+  #nav .subnav li:hover a {
+    background-color: rgb(255, 255, 255);
+    color: black;
+  }
+
+  #list-member {
+    flex-direction: column;
+    margin-bottom: 68px;
+  }
+
+  #list-member .member-img {
+    height: auto;
+    margin-bottom: 34px;
+  }
+
+  #list-member img {
+    width: 260px;
+  }
+
+  .content-places {
+    flex-direction: column;
+  }
+
+  .places-item {
+    padding: 10px 0;
+  }
+
+  .content-places .place-heading {
+    font-size: 18px;
+  }
+
+  .content-places .place-ticket {
+    padding: 14px 16px;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .content-contact {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contact-address {
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  .content-form {
+    width: 100%;
+  }
+  .content-form input {
+    border: 2px solid #777;
+  }
+  .form-info {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .form-info input {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .form-button button {
+    width: 100%;
+    padding: 15px 20px;
+  }
+}
+
+/*MOBILE and TABLET*/
+@media only screen and (max-width: 1204px) {
+  .content-section,
+  .content-contact,
+  .content-places {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}

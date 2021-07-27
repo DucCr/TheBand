@@ -1,0 +1,388 @@
+/* Reset CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+#header {
+  height: 46px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+#nav li {
+  display: inline-block;
+  position: relative;
+}
+
+#nav li:hover > a {
+  background-color: #ccc;
+  color: #000;
+}
+
+#nav > li > a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 46px;
+  padding: 0 24px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+#nav .subnav {
+  display: none;
+  position: absolute;
+  background-color: white;
+  top: 100%;
+  left: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav__softdown {
+  font-size: 20px;
+  position: absolute;
+  top: 19%;
+  right: 9%;
+}
+
+#nav li:hover .subnav {
+  display: block;
+}
+
+#nav .subnav li {
+  display: block;
+}
+
+#nav .subnav a {
+  display: block;
+  text-decoration: none;
+  line-height: 46px;
+  padding: 0 16px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+#nav {
+  display: inline-block;
+}
+
+.icon-bar {
+  display: none;
+}
+
+.icon-bar:hover {
+  background-color: #888;
+  cursor: pointer;
+  color: #000;
+}
+
+.icon-bar,
+.search-btn i {
+  color: white;
+  line-height: 46px;
+  padding: 0 23px;
+}
+
+.search-btn:hover {
+  background-color: #f44336;
+  cursor: pointer;
+}
+/*  SLIDER  */
+
+#slider {
+  margin-top: 46px;
+  padding-top: 45%;
+  background-image: url("../img/tb.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+#slider .text-content {
+  position: absolute;
+  color: white;
+  bottom: 48px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+#slider .text-heading {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+#slider .text-desc {
+  font-size: 15px;
+  margin-top: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+.content-section {
+  width: 800px;
+  padding-top: 64px;
+  margin: 0 auto;
+}
+
+.content-heading {
+  font-weight: 500;
+  margin-bottom: 35px;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.content-sub {
+  font-size: 15px;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.705);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#content .content-about {
+  font-size: 15px;
+  text-align: justify;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+/*  CONTENT  */
+/*  THE BAND */
+#list-member {
+  display: flex;
+  margin-top: 35px;
+  margin-bottom: 112px;
+  justify-content: center;
+}
+
+#list-member .member-img {
+  text-align: center;
+  height: 202px;
+}
+
+#list-member .member-name {
+  margin: 15px 0;
+  font-weight: 600;
+}
+
+#list-member img {
+  width: 187px;
+  height: 200px;
+  margin: 0 50px;
+  border-radius: 4px;
+}
+/*  TOUR DATES */
+.tour-section {
+  background-color: #000;
+}
+
+.tour-ticket {
+  background-color: #fff;
+}
+.tour-ticket li {
+  font-size: 15px;
+  padding: 8px 16px;
+  border-bottom: 1px solid #ddd;
+  color: #757575;
+  list-style-type: none;
+}
+
+.tour-ticket .sold-out {
+  margin-left: 16px;
+  color: #ffffff;
+  padding: 2px 8px;
+  background-color: #f44336;
+}
+
+.tour-ticket .quantity {
+  /* display: inline-block; */
+  float: right;
+  margin-right: 16px;
+  color: #ffffff;
+  padding: 2px 8px;
+  border-radius: 50%;
+  background-color: #000000;
+  margin-top: -2px;
+}
+
+.content-places {
+  display: flex;
+  width: 800px;
+  margin: 0 auto;
+  padding: 32px 0;
+  /* margin-left: -8px;
+  margin-right: -8px; */
+  padding-bottom: 106px;
+}
+
+.places-item {
+  padding: 0 8px;
+}
+
+.content-places img {
+  width: 100%;
+  height: 184px;
+  display: block;
+}
+
+.content-places img:hover {
+  opacity: 0.4;
+}
+
+.content-places .place-body {
+  font-size: 15px;
+  background-color: #fff;
+  padding: 16px;
+}
+
+.content-places .place-heading {
+  font-weight: 500;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.content-places .place-time {
+  margin: 15px 0;
+  color: rgba(0, 0, 0, 0.685);
+}
+
+.content-places .place-desc {
+  margin: 20px 0;
+  line-height: 1.4;
+  padding-bottom: 10px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.content-places .place-ticket {
+  color: white;
+  background-color: #000;
+  padding: 10px 16px;
+  margin-top: 5px;
+  text-decoration: none;
+}
+
+.content-places .place-ticket:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+/* CONTACT */
+.content-contact {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  padding: 32px 0;
+}
+
+.contact-address {
+  font-weight: 500;
+  line-height: 1.8;
+  width: 50%;
+}
+.contact-address i {
+  display: inline-block;
+  min-width: 20px;
+}
+
+.content-form {
+  width: 50%;
+  margin-top: -10px;
+}
+
+.content-contact input {
+  font-size: 16px;
+  padding: 8px;
+}
+
+.form-info input {
+  width: 48%;
+}
+
+.form-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.form-message {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.form-message input {
+  width: 100%;
+}
+
+.content-contact .form-button {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.form-button button {
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  background-color: #000;
+  margin-right: 0;
+}
+
+.form-button button:hover {
+  background-color: #ccc;
+  color: #000;
+  cursor: pointer;
+}
+
+/* CSS Map*/
+
+.section-map img {
+  width: 100%;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 64px 0;
+  background-color: #f1f1f1;
+  font-size: 15px;
+}
+
+.footer-icon {
+  text-align: center;
+}
+
+.footer-icon i {
+  color: rgba(0, 0, 0, 0.473);
+}
+
+.footer-icon i:hover {
+  color: rgba(0, 0, 0, 0.692);
+}
+
+.footer-text {
+  text-align: center;
+  margin: 20px 0;
+}
+.footer-text a,
+p {
+  color: rgba(7, 7, 7, 0.705);
+}
